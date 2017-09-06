@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The White Lodge</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+
+  <!-- simply some weird background -->
+  <div id="bg"></div>
+
+  <!-- main element and element to be transformed -->
+  <main>
+    <div id="element-transformed"></div>
+    <div id="transform-origin-indicator"></div>
+  </main>
+
+  <!-- aside with form  -->
+  <aside>
+    <form action="#">
+      <h2>1. Set transform origin</h2>
+      <label>transform-origin (x)</label>
+      <select id="transform-origin-x">
+        <option value="left">left</option>
+        <option value="center">center</option>
+        <option value="right">right</option>
+        <option value="-20%">-20%</option>
+        <option value="6em">6em</option>
+      </select>
+      <label>transform-origin (y)</label>
+      <select id="transform-origin-y">
+        <option value="top">top</option>
+        <option value="center">center</option>
+        <option value="bottom">bottom</option>
+        <option value="-20%">-20%</option>
+        <option value="6em">6em</option>
+      </select>
+
+      <h2>2. Specify transform</h2>
+      <label>transform (type)</label>
+      <select id="transform">
+        <option value="translate">translate</option>
+        <option value="scale">scale</option>
+        <option value="rotate">rotate</option>
+        <option value="skew">skew</option>
+      </select>
+
+      <label>transform (value 1)</label>
+      <input type="text" id="transform-val-1">
+
+      <label>transform (value 2)</label>
+      <input type="text" id="transform-val-2">
+
+      <button type="submit">
+        <span>Ready?</span>
+        <span>Go!</span>
+      </button>
+    </form>
+  </aside>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="../js/main.js"></script>
+
+</body>
+</html>

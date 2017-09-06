@@ -1,0 +1,138 @@
+@import 'normalize';
+@import 'reset';
+@import 'basic';
+
+@font-face {
+    font-family: 'webfont';
+    src: url('../fonts/webfont-regular.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'webfont';
+    src: url('../fonts/webfont-bold.woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'webfont';
+    src: url('../fonts/webfont-italic.woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'webfont';
+    src: url('../fonts/webfont-bolditalic.woff');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+
+/* Basic Font settings */
+
+html {
+  font: 1.25em/1.6 'webfont', sans-serif;
+}
+
+
+/* And here follows your custom CSS */
+
+
+/* ----------------------------- */
+/* make a transition for the     */
+/* #transform-origin-indicator's */
+/* top and left position         */
+/* with ease in and out          */
+/* ----------------------------- */
+#transform-origin-indicator {
+  transition: top .3s ease-in-out, left .3s ease-in-out;
+}
+
+
+/* ----------------------------------- */
+/* make a transition for the           */
+/* #element-transformed's              */
+/* transformation with ease in and out */
+/* ----------------------------------- */
+#element-transformed {
+  transition: transform .3s ease-in-out;
+}
+
+
+
+/* ----------------------------- */
+/* Style the aside and the form  */
+/* with button's hover animation */
+/* ----------------------------- */
+
+h2 {
+  margin: 1rem 0;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0,0,0,.5), -2px -2px 2px rgba(0,0,0,.5), 2px -2px 2px rgba(0,0,0,.5), -2px 2px 2px rgba(0,0,0,.5);
+}
+
+h2:first-child {
+  margin-top: .5rem;
+}
+
+form {
+  font-size: .75rem;
+  padding: .5rem;
+}
+
+label, select, input {
+  margin-bottom: .5rem;
+}
+
+label {
+  display: block;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0,0,0,.5), -2px -2px 2px rgba(0,0,0,.5), 2px -2px 2px rgba(0,0,0,.5), -2px 2px 2px rgba(0,0,0,.5);
+}
+
+select, input {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  padding: .25em;
+
+}
+
+button {
+  display: block;
+  margin: auto;
+  background: MediumPurple;
+  border: none;
+  padding: .25em .75em .5em .75em;
+  border-radius: .25em;
+  height: 1.25rem;
+  overflow: hidden;
+  box-sizing: content-box;
+  position: relative;
+  font-weight: bold;
+  transition: 1s;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0,0,0,.25), -2px -2px 2px rgba(0,0,0,.25), 2px -2px 2px rgba(0,0,0,.25), -2px 2px 2px rgba(0,0,0,.25);
+}
+
+button:hover {
+  background: #80ff80;
+}
+
+button span {
+  display: block;
+  position: relative;
+  line-height: 1.5rem;
+  top: 0;
+  transition: .2s;
+}
+
+button:hover span {
+  top: -1.5rem;
+}
